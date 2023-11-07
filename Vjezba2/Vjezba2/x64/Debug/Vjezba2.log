@@ -1,0 +1,6 @@
+﻿  Vjezba2.c
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba2\Vjezba2\Vjezba2.c(150): warning C4716: 'AddEnd': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba2\Vjezba2\Vjezba2.c(107): warning C4716: 'DeletePerson': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba2\Vjezba2\Vjezba2.c(169): warning C4716: 'Print': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba2\Vjezba2\Vjezba2.c(161): warning C4716: 'Add': must return a value
+  Vjezba2.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba2\x64\Debug\Vjezba2.exe

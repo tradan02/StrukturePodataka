@@ -1,0 +1,9 @@
+﻿  Vjezba3.c
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(132): warning C4716: 'DeletePerson': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(115): warning C4716: 'WriteInFile': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(198): warning C4716: 'AddAfter': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(186): warning C4716: 'Add': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(210): warning C4716: 'AddBefore': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(218): warning C4716: 'Print': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\Vjezba3\Vjezba3.c(175): warning C4716: 'AddEnd': must return a value
+  Vjezba3.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba3\x64\Debug\Vjezba3.exe
