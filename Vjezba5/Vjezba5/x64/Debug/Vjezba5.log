@@ -1,0 +1,6 @@
+﻿  Vjezba5.c
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba5\Vjezba5\Vjezba5.c(108,3): warning C4033: 'CalculatePostfix' must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba5\Vjezba5\Vjezba5.c(144,3): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba5\Vjezba5\Vjezba5.c(111): warning C4715: 'CalculatePostfix': not all control paths return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba5\Vjezba5\Vjezba5.c(120): warning C4172: returning address of local variable or temporary: Buffer
+  Vjezba5.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba5\x64\Debug\Vjezba5.exe
