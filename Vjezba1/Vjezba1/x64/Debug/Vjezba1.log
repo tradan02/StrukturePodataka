@@ -1,2 +1,5 @@
 ﻿  Vjezba1.c
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba1\Vjezba1\Vjezba1.c(64,3): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba1\Vjezba1\Vjezba1.c(72,4): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba1\Vjezba1\Vjezba1.c(91,3): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
   Vjezba1.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba1\x64\Debug\Vjezba1.exe

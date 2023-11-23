@@ -1,68 +1,104 @@
 #define _CRT_SECURE_NO_WARNINGS
-#define FILE_NOT_OPENED (-1)
-#define MAX_LINE (1024)
+#define MAX_LINE (108)
+#define MAX_SIZE (1028)
+#define ERROR (NULL)
+#define ErrorAllocating (NULL)
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
-typedef struct Student Stud;
-struct Student {
-	char ime[30];
-	char prezime[30];
-	int bodovi;
-};
+//Napisati program koji prvo procita koliko redaka ima datoteka, tj.koliko ima studenata
+//zapisanih u datoteci.Nakon toga potrebno je dinamicki alocirati prostor za niz struktura
+//studenata(ime, prezime, bodovi) i ucitati iz datoteke sve zapise.Na ekran ispisati ime,
+//prezime, apsolutni i relativni broj bodova.
+//Napomena: Svaki redak datoteke sadrzi ime i prezime studenta, te broj bodova na kolokviju.
+//relatvan_br_bodova = br_bodova / max_br_bodova * 100
 
-int CountStudents(FILE* file);
-int InputStudents(FILE* file, int n, Stud x[]);
-int Print(Stud x[], int n);
-float rel_br_bod(int n);
+struct _Student;
+typedef struct _Student* List;
+typedef struct _Student {
+	char name[MAX_LINE], surname[MAX_LINE];
+	int score;
+}Student;
+
+int ReadAndLoadStudents(int NumberOfStudents, List ListOfStudents);
+int CountFromFile();
+int PrintStudentList(int NumberOfStudents, List ListOfStudents);
+float RelativeScore(int score);
+
+List AllocateList(int NumberOfStudents);
 
 int main() {
-	FILE* f;
-	f = fopen("stud.txt", "r");
-	int n = CountStudents(f);
-	fclose(f);
-	Stud* x = (Stud*)malloc(sizeof(Stud) * n);
+	int NumberOfStudents = CountFromFile();
+	if (NumberOfStudents == 0) {
+		printf("\nNema studenata u dadoteci, izlaz iz programa");
+	}
+	List ListOfStudents = NULL;
+	ListOfStudents = AllocateList(NumberOfStudents);
+	if (!ListOfStudents)
+		return ERROR;
 
-	f = fopen("stud.txt", "r");
-	if (InputStudents(f, n, x) == 0) printf("Nema studenata");
-	fclose(f);
-	Print(x, n);
-	free(x);
+	ReadAndLoadStudents(NumberOfStudents, ListOfStudents);
+	PrintStudentList(NumberOfStudents, ListOfStudents);
+	free(ListOfStudents);
 	return 0;
 }
 
-float rel_br_bod(int n) {
-	return (float)n / 30 * 100;
+float RelativeScore(int score) {
+	return (float)score / 50 * 100;
 }
 
-int Print(Stud x[], int n) {
-	int i;
-	for (i = 0; i < n; i++) {
-		printf("\n%s %s %d %.2f", x[i].ime, x[i].prezime, x[i].bodovi, rel_br_bod(x[i].bodovi));
+int PrintStudentList(int NumberOfStudents, List ListOfStudents) {
+	int i = 0;
+	for (i = 0; i < NumberOfStudents; i++) {
+		printf("\nName: %s\nSurname: %s\nScore: %d\nRelscore: %.1f\n\n\n\n", ListOfStudents[i].name, ListOfStudents[i].surname, ListOfStudents[i].score, RelativeScore(ListOfStudents[i].score));
 	}
 	return 0;
 }
 
-int CountStudents(FILE* file) {
-	int br = 1;
-	int brchar = 0;
-	char s = '\0';
-	while (s != EOF) {
-		brchar++;
-		s = fgetc(file);
-		if (s == '\n')
-			br++;
+int ReadAndLoadStudents(int NumberOfStudents, List ListOfStudents) {
+	FILE* filepointer = NULL;
+	filepointer = fopen("Studenti.txt", "r");
+	if (!filepointer)
+		return ERROR;
+
+	int i = 0;
+
+	for (i = 0; i < NumberOfStudents; i++) {
+		if (fscanf(filepointer, "%s %s %d", ListOfStudents[i].name, ListOfStudents[i].surname, &ListOfStudents[i].score) != 3) {
+			printf("Error reading data from file.\n");
+			fclose(filepointer);
+			return ERROR;
+		}
 	}
-	if (brchar == 1) br = 0;
-	return br;
+	fclose(filepointer);
+	return 0;
 }
 
-int InputStudents(FILE* file, int n, Stud x[]) {
-	if (n < 1) return 0;
-	int i;
-	for (i = 0; i < n; i++) {
-		fscanf(file, "%s %s %d", x[i].ime, x[i].prezime, &x[i].bodovi);
+List AllocateList(int NumberOfStudents) {
+	List ListOfStudents = NULL;
+	ListOfStudents = (List)malloc(sizeof(Student) * NumberOfStudents);
+	if (!ListOfStudents)
+		return ErrorAllocating;
+	return ListOfStudents;
+}
+
+int CountFromFile() {
+	FILE* filepointer = NULL;
+	filepointer = fopen("Studenti.txt", "r");
+	if (!filepointer)
+		return ERROR;
+	int counter = 0;
+	char buffer[MAX_LINE] = { 0 };
+
+	if (fgetc(filepointer) == EOF)
+		return 0;
+
+	while (!feof(filepointer)) {
+		fgets(buffer, MAX_LINE, filepointer);
+		counter++;
 	}
-	return 1;
+	fclose(filepointer);
+	return counter;
 }
