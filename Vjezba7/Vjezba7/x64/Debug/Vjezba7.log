@@ -1,0 +1,4 @@
+﻿  Vjezba7.c
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba7\Vjezba7\Vjezba7.c(131,3): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba7\Vjezba7\Vjezba7.c(100): warning C4172: returning address of local variable or temporary: path
+  Vjezba7.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba7\x64\Debug\Vjezba7.exe
