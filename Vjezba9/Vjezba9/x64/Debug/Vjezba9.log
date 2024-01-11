@@ -1,0 +1,3 @@
+﻿  Vjezba9.c
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba9\Vjezba9\Vjezba9.c(43,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Vjezba9.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba9\x64\Debug\Vjezba9.exe
