@@ -1,7 +1,7 @@
 ﻿  Vjezba4.c
 C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(225,10): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
-C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(187): warning C4715: 'AddElementBeforeByPosition': not all control paths return a value
 C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(168): warning C4716: 'AddElementBeforeByValue': must return a value
-C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(218): warning C4715: 'AddElementAfterByPosition': not all control paths return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(187): warning C4715: 'AddElementBeforeByPosition': not all control paths return a value
 C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(197): warning C4716: 'AddElementAfterByValue': must return a value
+C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\Vjezba4\Vjezba4.c(218): warning C4715: 'AddElementAfterByPosition': not all control paths return a value
   Vjezba4.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\tradan02\StrukturePodataka\Vjezba4\x64\Debug\Vjezba4.exe

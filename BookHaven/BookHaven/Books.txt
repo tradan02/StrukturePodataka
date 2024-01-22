@@ -1,0 +1,10 @@
+/Covjek u smedem odijelu/ /Agatha Christie/ 1924 5
+/Da Vincijev kod/ /Dan Brown/ 2003 8
+/Divlji skoljkasi/ /William Golding/ 1954 6
+/Gospodar prstenova/ /J.R.R. Tolkien/ 1954 7
+/Harry Potter i red feniksa/ /J.K. Rowling/ 2003 9
+/Lovac u zitu/ /J.D. Salinger/ 1951 2
+/Otkrivanje Indije/ /E.M. Forster/ 1924 5
+/Proces/ /Franz Kafka/ 1925 6
+/Suma/ /Franz Kafka/ 1924 3
+/Veliki Gatsby/ /F. Scott Fitzgerald/ 1925 3

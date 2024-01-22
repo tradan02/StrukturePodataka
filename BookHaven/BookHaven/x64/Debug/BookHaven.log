@@ -1,0 +1,3 @@
+﻿  BookHaven.c
+C:\Users\Toni\OneDrive\Radna površina\SP-BookHaven\BookHaven\BookHaven\BookHaven.c(216,49): warning C4013: 'Count_Books' undefined; assuming extern returning int
+  BookHaven.vcxproj -> C:\Users\Toni\OneDrive\Radna površina\SP-BookHaven\BookHaven\x64\Debug\BookHaven.exe
